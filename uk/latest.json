@@ -1,0 +1,165 @@
+{
+ "schema": 1,
+ "region": "uk",
+ "generated_utc": "2026-11-21T02:21:25Z",
+ "relay_version": "1.0.0",
+ "status": "ok",
+ "notes": [],
+ "slot_minutes": 5,
+ "latest_frame_utc": "2026-11-21T02:15:00Z",
+ "frames": [
+  {
+   "t": "2026-11-21T01:45:00Z",
+   "path": "uk/frames/20261121T0145Z.h5",
+   "bytes": 63757,
+   "sha256": "90704bd65ae0c75fb4bebd14cb390b95aaa89881c61e88686a5e103a2b806cd2",
+   "sources": {
+    "metoffice": "2026-11-21T01:45:00+00:00",
+    "opera": "2026-11-21T01:45:00+00:00"
+   }
+  },
+  {
+   "t": "2026-11-21T01:50:00Z",
+   "path": "uk/frames/20261121T0150Z.h5",
+   "bytes": 64146,
+   "sha256": "2cce6835ae5a47fc3686aa01b43e21a19352e877a0b2ec874583844e8c286dfb",
+   "sources": {
+    "metoffice": "2026-11-21T01:45:00+00:00",
+    "opera": "2026-11-21T01:50:00+00:00"
+   }
+  },
+  {
+   "t": "2026-11-21T01:55:00Z",
+   "path": "uk/frames/20261121T0155Z.h5",
+   "bytes": 65324,
+   "sha256": "e1f1e575ad6dfac4477a0cdcc69d5e13962f8879fb40751ca677da976eecf260",
+   "sources": {
+    "metoffice": "2026-11-21T01:45:00+00:00",
+    "opera": "2026-11-21T01:55:00+00:00"
+   }
+  },
+  {
+   "t": "2026-11-21T02:00:00Z",
+   "path": "uk/frames/20261121T0200Z.h5",
+   "bytes": 62301,
+   "sha256": "8953515fa311c0fa6b529addcb9efcc2aaeb81e306f435fcb8cbc7f4cb21bdf2",
+   "sources": {
+    "metoffice": "2026-11-21T02:00:00+00:00",
+    "opera": "2026-11-21T02:00:00+00:00"
+   }
+  },
+  {
+   "t": "2026-11-21T02:05:00Z",
+   "path": "uk/frames/20261121T0205Z.h5",
+   "bytes": 63998,
+   "sha256": "45b742e9c0e76299b23f49c93f7bbf192b42cb4cb7a8102d4cd3ebb8fbcbf0a6",
+   "sources": {
+    "metoffice": "2026-11-21T02:00:00+00:00",
+    "opera": "2026-11-21T02:05:00+00:00"
+   }
+  },
+  {
+   "t": "2026-11-21T02:10:00Z",
+   "path": "uk/frames/20261121T0210Z.h5",
+   "bytes": 66293,
+   "sha256": "81d7407f1af62e1437e28bca63b13bb149829c0423f14b4179388b85a62d4c86",
+   "sources": {
+    "metoffice": "2026-11-21T02:00:00+00:00",
+    "opera": "2026-11-21T02:10:00+00:00"
+   }
+  },
+  {
+   "t": "2026-11-21T02:15:00Z",
+   "path": "uk/frames/20261121T0215Z.h5",
+   "bytes": 63888,
+   "sha256": "f7bd82e914ea05ef232621c297899502da4bdc93e30f3dbfda19bc512f617b3a",
+   "sources": {
+    "metoffice": "2026-11-21T02:15:00+00:00",
+    "opera": "2026-11-21T02:15:00+00:00"
+   }
+  }
+ ],
+ "frame_path_template": "uk/frames/{YYYYMMDD}T{HHMM}Z.h5",
+ "client_hints": {
+  "first_try_after_slot_s": 390,
+  "retry_missing_after_s": 75,
+  "manifest_cache_s": 300
+ },
+ "grid": {
+  "id": "ukg1-tmerc-1km",
+  "nx": 1173,
+  "ny": 1542,
+  "cell_m": 1000,
+  "ul_m": [
+   -326000,
+   1197000
+  ],
+  "projdef": "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.999601 +x_0=400000 +y_0=-100000 +ellps=airy +units=m"
+ },
+ "encoding": {
+  "dataset": "dataset1/data1/data",
+  "quantity": "DBZH (equivalent of the rain-caution rate)",
+  "gain": 0.5,
+  "offset": -32.0,
+  "nodata": 255,
+  "undetect": 0,
+  "zr": [
+   200.0,
+   1.6
+  ],
+  "motion": "group /motion: u,v int16 x 0.01 m/s, east/north, 32 km cells from ul_m"
+ },
+ "policy": "caution-v1",
+ "sources": {
+  "metoffice": {
+   "latest_utc": "2026-11-21T02:15:00Z",
+   "age_min": 6.4,
+   "endpoint": "https://met-office-radar-obs-data.s3.eu-west-2.amazonaws.com",
+   "cadence_minutes": [
+    0,
+    15,
+    30,
+    45
+   ],
+   "publish_delay_s_p50": 334,
+   "licence": "CC BY-SA 4.0"
+  },
+  "opera": {
+   "latest_utc": "2026-11-21T02:15:00Z",
+   "age_min": 6.4,
+   "endpoint": "https://object-store.os-api.cci1.ecmwf.int/openradar-24h-backup",
+   "cadence_minutes": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55
+   ],
+   "publish_delay_s_p50": 257,
+   "licence": "CC BY 4.0"
+  }
+ },
+ "motion": {
+  "method": "tile-phase-correlation-v1:opera",
+  "valid_tiles": 154,
+  "median_speed_kmh": 8.9
+ },
+ "nowcast_check": {
+  "t": "2026-11-21T02:15:00Z",
+  "csi15_motion": 0.51,
+  "csi15_persistence": 0.314,
+  "avg_csi15_motion": 0.514,
+  "avg_csi15_persistence": 0.321,
+  "scored": 2
+ },
+ "attribution": "Radar: \u00a9 Crown copyright Met Office, licensed CC BY-SA 4.0; EUMETNET OPERA, licensed CC BY 4.0. Merged, reprojected and extrapolated by Rain Ninja. These maps are licensed CC BY-SA 4.0.",
+ "licence": "CC BY-SA 4.0",
+ "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+}
